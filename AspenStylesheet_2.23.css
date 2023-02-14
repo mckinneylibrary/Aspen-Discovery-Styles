@@ -1,0 +1,192 @@
+/**** Rounded Corners on Browse Category ****/
+.browse-category {
+border-radius: 10px;
+}
+
+/**** Hover effects on Browse Category Buttons ****/
+.browse-category div:hover {
+text-decoration: none;
+}
+
+.jcarousel li {
+border: none;
+}
+
+.jcarousel li:hover {
+border: 2px solid #a9c25d;
+}
+
+/******
+/********************** Background Image for Banner *************************/
+#header-wrapper {
+background-image: url("https://github.com/mckinneylibrary/images/blob/master/Aspen/AspenFallBackground.png?raw=true");
+background-size: cover;
+}
+
+//Spring/Summer Banner Link to switch to in March - August
+//https://github.com/mckinneylibrary/images/blob/master/Aspen/SpringSummer_AspenBanner.png?raw=true
+
+//Autumn/Winter Banner Link to switch in September - February
+//https://github.com/mckinneylibrary/images/blob/master/Aspen/AspenFallBackground.png?raw=true****/
+
+
+
+/********************** Aspen Banner  GIF *************************/
+
+div#page-header {
+width: 100%;
+}
+
+div#header-wrapper.row  {
+background-image: url("https://github.com/mckinneylibrary/images/blob/master/Aspen/AspenBanner2023.gif?raw=true");
+background-size: cover;
+height: 250px;
+background-repeat: no-repeat;
+padding: 0;
+margin-left: -15px; 
+}
+
+#header-logo {
+width: 400px;
+margin-top: 55px; 
+margin-left: 25px;
+}
+
+/* Mobile Size Adjustments for Banner*/
+
+@media only screen and (max-width: 768px){
+div#header-wrapper.row  {
+margin-left: -200px;
+}
+#header-logo {
+    width: 300px;
+    margin-top: 65px;
+    margin-left: 200px;
+}
+}
+
+@media only screen and (max-width: 480px){
+div#header-wrapper.row  {
+background-image: url("https://github.com/mckinneylibrary/images/blob/master/Aspen/AspenMobileBanner.gif?raw=true");
+background-size: cover;
+margin-left: -15px;
+}
+#header-logo {
+width: 275px;
+margin: auto;
+margin-top: 20px;
+}
+#language-selection-header {
+margin-top: 110px;
+}
+}
+
+/********************End Aspen Banner *********************************/
+
+
+
+
+/******************End Banner Code ***************************/
+/**** Logo 
+img#header-logo {
+width: 100%;
+margin: 0;
+padding: 200px;
+} ****/
+
+
+/**** Side scrolling arrows - Getting rid of background and making arrows blue ****/
+#browse-category-picker .jcarousel-control-prev, #browse-category-picker .jcarousel-control-next {
+    background-color: transparent;
+    color: #084d69;
+    font-size: 50px;
+    border: none;
+box-shadow: none;
+}
+
+
+.jcarousel-pagination a.active {
+    background: #084d69;
+    color: #fff;
+    opacity: 1;
+    box-shadow: 0 0 2px #084d69;
+}
+
+/**** Scroll down arrow ****/
+#more-browse-results {
+    background-color: transparent;
+    color: #084d69;
+    text-align: center;
+    padding: 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    line-height: 0;
+}
+
+
+/***** Event Feed display for placards *****/
+.feed-item-desc {
+  width: 300px;
+  height: 100px;
+  border: 1px solid blue;
+  box-sizing: border-box;
+}
+
+/***** Hide self-reg username *****/
+#selfRegAccountInfo #selfRegUsername {
+  display: none !important;
+}
+
+#selfRegAccountInfo #selfRegPassword{
+  display: none !important;
+}
+
+
+/**** Spotlights Collections header color on Custom Pages ****/ 
+.titleScrollerHeader {
+background-color: #084d69;
+}
+
+/**** Media Query to separate carousel arrows from Browse Category buttons in Mobile, Add Padding to search fields ****/
+@media only screen and (max-width: 600px) {
+     .jcarousel-control-next {
+         right: 0px;
+         width: 20px;
+}
+     .jcarousel-control-prev {
+         left: 0px;
+         width: 20px;
+}
+
+#horizontal-search-box .searchSourceHorizontal, #horizontal-search-box .searchTypeHorizontal {
+    width: 95%;
+    margin: auto;
+    border: none;
+    border-radius: 0;
+}
+
+#horizontal-search-box #lookfor {
+    height: 34px;
+    width: calc(98% - 35px);
+    display: inline-block;
+}
+
+#horizontal-search-box div {
+    padding-left: 1px;
+    padding-right: 1px;
+    width: 100%;
+}
+}
+
+.system-message-text.img-responsive {
+display: none; 
+}
+
+/**** Gets rid of Padding around system banner message ****/
+#system-message-5, #system-messge-header.row {
+padding: 0; 
+margin: 0;
+}
+
+/**** Add a drop shadow behind the alert box ****/ 
+.alert {box-shadow:0 0.8px 0.2px rgb(0 0 0 / 3%), 0 1px 0.3px rgb(0 0 0 / 5%), 0 0.5px 10px rgb(0 0 0 / 6%), 0 2px 17.9px rgb(0 0 0 / 7%), 0 4.8px 3px rgb(0 0 0 / 9%), 0 10px 80px rgb(0 0 0 / 5%);}
